@@ -20,7 +20,7 @@ import React from 'react';
 export default function Jsx() {
   return React.createElement(
     'div',
-    { id: 'jsx', classname: 'Jsx' },
+    { id: 'jsx', className: 'Jsx' },
     React.createElement('h1', null, 'With out Jsx MultiLine')
   );
 }
