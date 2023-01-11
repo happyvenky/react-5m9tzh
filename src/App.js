@@ -4,6 +4,7 @@ import { About } from './About';
 import Jsx from './Jsx';
 import Props from './Props';
 import State from './State';
+import FnState from './FnState';
 
 export default function App() {
   return (
@@ -19,6 +20,8 @@ export default function App() {
       <Props name="venky" place="Salem" />
       -----------------------------------------------------------------
       <State />
+      ----------------------------------------------------------------
+      <FnState/>
     </div>
   );
 }
