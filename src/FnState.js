@@ -16,7 +16,7 @@ export default function FnState() {
     setUser('Useing React UseState');
   };
 
-  //using SetState
+  //using SetState Object
 
   const [detail, setDeatil] = useState({ name: 'venky', place: 'salem' });
 
@@ -32,6 +32,18 @@ export default function FnState() {
       place: 'Chennai',
     });
   };
+
+  ///current state display
+
+  const [count, setCount] = useState(0);
+  const increment = () => {
+    setCount(count + 1);
+    console.log('count', count);
+  };
+  const decrement = () => {
+    setCount(count - 1);
+    console.log('count', count);
+  };
   return (
     <div>
       <h1>Function State</h1>
@@ -41,6 +53,10 @@ export default function FnState() {
       <h2>{detail.place}</h2>
       <button onClick={nameChanges}>NameChange</button>
       <button onClick={placeChanges}>PlaceChange</button>
+
+      <h1>{count}</h1>
+      <button onClick={increment}>+</button>
+      <button onClick={decrement}>-</button>
     </div>
   );
 }
