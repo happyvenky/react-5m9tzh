@@ -5,6 +5,7 @@ import Jsx from './Jsx';
 import Props from './Props';
 import State from './State';
 import FnState from './FnState';
+import UseEffect from './UseEffect'
 
 export default function App() {
   return (
@@ -22,6 +23,8 @@ export default function App() {
       <State />
       ----------------------------------------------------------------
       <FnState/>
+      --------------------------------------------------------------
+      <UseEffect/>
     </div>
   );
 }
